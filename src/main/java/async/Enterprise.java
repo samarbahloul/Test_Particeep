@@ -5,6 +5,9 @@ class Enterprise {
   String name;
   String ceo_id;
 
+  public Enterprise() {
+	  
+  }
   public Enterprise(String id, String name, String ceo_id) {
     this.id = id;
     this.name = name;

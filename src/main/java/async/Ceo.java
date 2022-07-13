@@ -4,6 +4,7 @@ class Ceo {
   String id;
   String name;
 
+  public Ceo() {}
 
   public Ceo(String id, String name) {
     this.id = id;

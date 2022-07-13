@@ -12,6 +12,18 @@ public class BasicTest {
    * alse return None in case of errors
    */
   public static Option<Integer> power(Integer i, Integer n) {
-    return Option.none();
+	  Option<Integer> temp= Option.of(1);
+	  int tmp = temp.get();
+	  while (n != 0) {
+		 tmp = tmp * i ;
+		  n--;
+	  }
+    return Option.of(tmp);
+  }
+  public static void main(String[] args) {
+	  Option<Integer> origin = power(2,9);
+	  System.out.println(origin);
+	  
+	  
   }
 }
